@@ -130,15 +130,14 @@ while True:
     palavra = tuple(palavra)
     print(palavra)
     for p in palavra:
+        vogais = ''
         print(f'Na palavra {p} há as vogais ', end='')
         for c in p:
-            if c in 'A' or 'E' or '':
-                if c[-1]:
-                    print(f'{c}')
-                    print('=' * 60 + '\n')
-                    continuar = str(input('Gostaria de continuar? [S/N]')).upper().strip()
-                    print(('\n') + '=' * 60)
-                    if continuar == 'N':
-                        break
-                else:
-                    print(f'{c}, ')
+            if c in 'AEIOU':
+                vogais += c + ' '
+        print(vogais)
+    print('=' * 60 + '\n')
+    continuar = str(input('Gostaria de continuar? [S/N]')).upper().strip()[0]
+    print(('\n') + '=' * 60)
+    if continuar == 'N':
+        break
