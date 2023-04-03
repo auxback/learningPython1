@@ -418,5 +418,5 @@ def ret(x, y):
     return r
 
 
-print(f'A figura retangular tem a área de {ret(a, b)}m²')
+print(f'A figura retangular tem a área {ret(a, b)}m²')
 
