@@ -518,6 +518,7 @@
 # help(somaPar)
 
 
+
 # TESTE VARIÁVEL GLOBAL
 
 # def myfunc():
