@@ -145,7 +145,7 @@
 
 # MAIOR MENOR VALOR EM UMA LISTA
 
-from time import sleep
+#from time import sleep
 
 # count = 0
 # lista = []
@@ -411,12 +411,121 @@ from time import sleep
 
 # ÁREA DE UMA FIGURA GEOMÉTRICA RETANGULAR
 
-a = float(input('Digite a altura em metros: '))
-b = float(input('Digite a largura em metros: '))
-def ret(x, y):
-    r = x * y
-    return r
+# a = float(input('Digite a altura em metros: '))
+# b = float(input('Digite a largura em metros: '))
+# def ret(x, y):
+#     r = x * y
+#     return r
+#
+#
+# print(f'A figura retangular tem a área {ret(a, b)}m²')
 
 
-print(f'A figura retangular tem a área {ret(a, b)}m²')
 
+# MENSAGEM COM FUNÇÃO
+
+# mensagem = str(input('Escreva uma mensagem: '))
+# def escreva(x):
+#     print('-' * len(x))
+#     print(x)
+#     print('-' * len(x))
+#
+#
+# print(escreva(mensagem))
+
+
+# CONTADOR EM FUNÇÃO
+
+# from time import sleep
+#
+# def contador(ini, fim, progss):
+#     print(f'A contagem de {ini} até {fim} pulando {progss} é: ')
+#     if ini < fim:
+#         while ini <= fim:
+#             print(f'{ini} ', end='')
+#             ini += progss
+#             sleep(0.5)
+#         print(' FIM!')
+#     else:
+#         while ini >= fim:
+#             print(f'{ini} ', end='')
+#             ini -= progss
+#             sleep(0.5)
+#         print(' FIM!')
+#
+#
+# inpIni = int(input('Digite o valor inicial: '))
+# inpFim = int(input('Digite o valor final: '))
+# inpProgss = int(input('Digite o valor de progressão (2 em 2 e etc): '))
+# auxProgss = str(inpProgss)
+# if '-' in auxProgss:
+#     inpProgss = inpProgss * (-1)
+# elif '0' in auxProgss:
+#     inpProgss =+ 1
+# print(contador(inpIni, inpFim, inpProgss))
+
+
+# FUNÇÃO QUE RETORNA QUAL O MAIOR VALOR DE UMA LISTA
+
+# valores = list()
+#
+#
+# def maior(lista):
+#     print(f'O maior valor da lista de valores é o {max(lista)}')
+#
+#
+# while True:
+#     valor = int(input('Adicione um valor que queira adicionar na lista ([00] para mostrar resultado): '))
+#     if valor != 00:
+#         valores.append(valor)
+#     else:
+#         maior(valores)
+#         break
+
+
+
+# FUNÇÃO RETORNA A SOMA DOS VALORES PARES
+#
+# from random import randint
+# def listSort():
+#     lista = list()
+#     for cont in range(0, 5):
+#         a = randint(0, 10)
+#         lista.append(a)
+#     return lista
+#
+#
+# def somaPar(listaSorteada):
+#     """
+#     Recebe uma lista com 5 valores inteiros de 0 a 10 aleatórios e retorna a soma de todos os
+#     valores pares.
+#     :param listaSorteada: precisa receber uma lista já sorteada entre 0 a 10
+#     :return: rertorna a soma dos valores pares da lista
+#     Função criada por Antony Mário
+#     """
+#     ## Lembrando que não é necessário fazer cópia da lista abaixo, pq listaSorteada já faz uma cópia
+#     tuplaa = listaSorteada
+#     aux = 0
+#     for p, v in enumerate(tuplaa):
+#         print(f'{p}  {v}')
+#         if v % 2 == 0:
+#             aux += v
+#     return aux
+#
+#
+# minhaLista = listSort()
+# print(f'A lista foi esta {minhaLista} e a soma de todos os valores pares dela é {somaPar(minhaLista)}')
+# help(somaPar)
+
+
+# TESTE VARIÁVEL GLOBAL
+
+# def myfunc():
+#   global x
+#   x = "fantastic"
+#
+#
+# myfunc()
+# x = "Antony"
+# myfunc()
+# print("Python is " + x)
