@@ -26,6 +26,14 @@
 #    usuario = int(input('Gostaria de continuar? [1/0] ("1" para SIM ou "0" para NÃO)'))
 #
 
+## Há uma forma mais prática de fazer o fatorial:
+#
+# def fatorial(num=1):
+#     f = 1
+#     for c in range(num, 0, -1):
+#         f *= c
+#     return f
+
 #FIBONACCI
 #seq = int(input('Digite a quantidade de sequências da série de Fibonacci: '))
 #count = 3
@@ -519,8 +527,8 @@
 
 
 
-# TESTE VARIÁVEL GLOBAL
-
+# # TESTE VARIÁVEL GLOBAL
+#
 # def myfunc():
 #   global x
 #   x = "fantastic"
@@ -528,5 +536,31 @@
 #
 # myfunc()
 # x = "Antony"
-# myfunc()
+# #myfunc()
 # print("Python is " + x)
+
+
+# v = int(input("Digite o valor para saber seu fatorial"))
+# def fatorialPref(v, mostrar=True):
+#     """
+#     Calcula o fatorial.
+#     :param v: Valor que será calculado seu fatorial.
+#     :param mostra: permite ou não mostrar o valor para o usuário, padrão em True.
+#     :return: Retorna o fatorial com mais ou menos informações.
+#     """
+#     f = 1   # Começa com 1 pra multiplicar
+#     for c in range(v, 0, -1):
+#         if mostrar:
+#             print(c, end='')
+#             if c > 1:
+#                 print(' x ', end='')
+#             else:
+#                 print(' = ', end='')
+#         f *= c
+#     return f
+#
+#
+# #print(fatorialPref(v, mostrar=True))
+# help(fatorialPref)
+
+
