@@ -564,3 +564,74 @@
 # help(fatorialPref)
 
 
+# FUNÇÃO DO JOGADOR DE FUTEBOL (PARÂMETROS FIXOS OU OPCIONAIS) [exercicio 103]
+# def informarGols (jogador, gols):
+#     if type(jogador) != str or jogador == '':
+#         jogador = '<jogador desconhecido>'
+#     if type(gols) != int:
+#         gols = 0
+#     return print(f'O jogador {jogador} fez {gols} gol(s) no campeonato.')
+#
+#
+# jogador = str(input('Nome de jogador: '))
+# gols = int(input('Número de gols: '))
+# informarGols(jogador, gols)
+
+
+# FUNÇÃO QUE MOSTRA ALGUMAS INFORMAÇÕES DA TURMA
+# def detalharNotas(notas=[], mostrarSituacao=False):
+#     media = (sum(notas)/len(notas))
+#     situacao = ''
+#     if media >= 7:
+#         situacao = 'BOA'
+#     else:
+#         situacao = 'RUIM'
+#     dicioNotas = {'Quantidade de Notas': len(notas), 'A menor nota': min(notas), 'A média da turma': media, 'Situação da turma': situacao if mostrarSituacao == True else ''}
+#     return print(dicioNotas)
+#
+# notas = []
+# while True:
+#     nota = float(input('Digite uma nota (99 p encerrar): '))
+#     if nota == 99:
+#         break
+#     round(nota, 2)
+#     notas.append(nota)
+# situacao = False
+# aux = str(input('Quer que informe a situação escolar ? [S/N]')).strip().upper()
+# if aux == 'S':
+#     detalharNotas(notas, mostrarSituacao=True)
+# else:
+#     detalharNotas(notas, mostrarSituacao=False)
+
+
+# FATORIAL AULA AULA 22 EXEMPLO
+# def fatorial(n):
+#     f = 1
+#     for c in range(1, n+1):
+#         f *= c
+#         print(c)
+#     return f
+#
+#
+# print(fatorial(5))
+
+
+# MODULOS
+# import uteis
+#
+# preco = float(input("Digite o preço: R$"))
+# print(f"A metade de R${preco:.2f} é R${uteis.dividirMetade(preco):.2f}")
+# print(f"O dobro de R${preco:.2f} é R${uteis.dobrar(preco):.2f}")
+# print(f"Aumentando 10% de R${preco:.2f} teriamos R${uteis.aumentar(preco):.2f}")
+# print(f"Diminuindo 10% de R${preco:.2f} teriamos R${uteis.diminuir(preco):.2f}")
+
+
+# Verificando se há dados afabéticos em strings
+# nome = str(input("asas"))
+# if nome.isalpha():
+#     print("é uma string com dados completamente alfabéticos")
+# else:
+#     print("não")
+
+
+
